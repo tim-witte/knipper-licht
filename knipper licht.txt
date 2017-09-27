@@ -1,0 +1,42 @@
+int led1= 7;
+int led2= 8;
+int led3= 9;
+int led4= 10;
+int led5= 11;
+int led6= 12;
+int led7= 13;
+
+void setup() {
+  pinMode (led1, OUTPUT);
+  pinMode (led2, OUTPUT);
+  pinMode (led3, OUTPUT);
+  pinMode (led4, OUTPUT);
+  pinMode (led5, OUTPUT);
+  pinMode (led6, OUTPUT);
+  pinMode (led7, OUTPUT);
+}
+
+void loop() {
+OnOff(50,50,13);
+OnOff(50,50,12);
+OnOff(50,50,11);
+OnOff(50,50,10);
+OnOff(50,50,9);
+OnOff(50,50,8);
+OnOff(50,50,7);
+OnOff(50,50,8);
+OnOff(50,50,9);
+OnOff(50,50,10);
+OnOff(50,50,11);
+OnOff(50,50,12);
+}
+
+void OnOff(int On, int Off, int poort){
+  digitalWrite(poort, HIGH);
+  delay(On);
+
+  digitalWrite(poort, LOW);
+  delay(Off);
+
+}
+
